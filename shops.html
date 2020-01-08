@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albanto</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+	</head>
+	<body>
+		<header class="header-main">
+			<div class="wrapper">
+				<div class="header-wrapper d-flex flex-row justify-content-between align-content-center">
+					<div class="mobile-wrapper">
+						<div class="mobile-menu-toggle">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+						<span class="mdi mdi-magnify search-button"></span>
+					</div>
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" class="img-fluid" alt="">
+						</a>
+					</div>
+					<nav class="menu">
+						<a href="about-us.html">О компании</a>
+						<a href="catalog.html">Коллекции</a>
+						<a href="cooperation.html">Сотрудничество</a>
+						<a href="shops.html" class="active">Магазины</a>
+						<a href="contacts.html">Контакты</a>
+
+						<div class="mobile-info">
+							<div class="social-wrap">
+								<a href="#">
+									<span class="mdi mdi-facebook"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-vk"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-instagram"></span>
+								</a>
+							</div>
+							<div class="phones-wrap">
+								<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+								<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+							</div>
+						</div>
+					</nav>
+					<div class="header-controls d-flex flex-row justify-content-between align-content-center">
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-magnify search-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-account-circle profile-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="busket.html">
+								<span class="mdi mdi-shopping basket-button basket-button-not-empty"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search-field">
+					<form action="#">
+						<input type="search" placeholder="Поиск по каталогу" class="search-input">
+						<button type="submit" class="search-icon">
+							<span class="mdi mdi-magnify"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="catalog-wrapper wrapper">
+				<div class="row">
+					<div class="col-md-3 col-catalog-sidebar">
+						<div class="catalog-sidebar">
+							<div class="mobile-select-shops">
+								<h3>Магазины</h3>
+								<div class="mobile-select-catalog">
+									<span data-toggle="modal" data-target="#collections">Страна <i class="mdi mdi-chevron-down"></i></span>
+									<span data-toggle="modal" data-target="#filters">Город <i class="mdi mdi-chevron-down"></i></span>
+								</div>
+							</div>
+							<div class="sidebar-block">
+								<h3>Магазины</h3>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter1" aria-expanded="true">
+										<span>Страна <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse show" id="filter1">
+										<ul class="sidebar-list sidebar-list-filter">
+											<li>
+												<a href="#">Украина</a>
+											</li>
+											<li>
+												<a href="#">Германия</a>
+											</li>
+											<li>
+												<a href="#">Италия</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter2" aria-expanded="true">
+										<span>Город <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse show" id="filter2" style="">
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">Харьков</a>
+											</li>
+											<li>
+												<a href="#">Киев</a>
+											</li>
+											<li>
+												<a href="#">Днепр</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-product-columns-wrapper">
+						<div class="product-columns-wrapper shops-columns-wrapper d-flex flex-wrap justify-content-center">
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img1.jpg" class="default" alt="">
+										<img src="images/shops-img4.png" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>Московский проспект</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img2.png" class="default" alt="">
+										<img src="images/shops-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>Клочковская</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img3.png" class="default" alt="">
+										<img src="images/shops-img5.png" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>ТРЦ Дафи</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img4.png" class="default" alt="">
+										<img src="images/shops-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>м. Героев Труда</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img5.png" class="default" alt="">
+										<img src="images/shops-img6.png" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>Проспект Гагарина</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="shop-contacts.html" class="catalog-col shop-col">
+									<div class="img-wrap">
+										<img src="images/shops-img6.png" class="default" alt="">
+										<img src="images/shops-img2.png" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">Харьков</h4>
+										<div class="product-info-price d-flex">
+											<p>Сумская</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-main">
+			<div class="wrapper d-flex flex-row justify-content-between align-content-center">
+				<div class="phones-wrap">
+					<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+					<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+				</div>
+				<div class="social-wrap">
+					<a href="#">
+						<span class="mdi mdi-facebook"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-vk"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-instagram"></span>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- The Modals -->
+		<div class="modal fade modal-catalog" id="filters">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="sidebar-block">
+						<h3>Город</h3>
+						<span class="close-modal mdi mdi-close" data-dismiss="modal"></span>
+						<div class="sidebar-filter">
+							<div class="filter-body collapse show" id="filter4">
+								<ul class="sidebar-list sidebar-list-filter">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check1">
+											<label for="check1">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Харьков</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check2">
+											<label for="check2">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Киев</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check3">
+											<label for="check3">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Днепр</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-catalog" id="collections">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="sidebar-block">
+						<h3>Страна</h3>
+						<span class="close-modal mdi mdi-close" data-dismiss="modal"></span>
+						<div class="sidebar-filter">
+							<div class="filter-body collapse show" id="filter10">
+								<ul class="sidebar-list sidebar-list-filter">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check17">
+											<label for="check17">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Украина</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check18">
+											<label for="check18">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Италия</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check19">
+											<label for="check19">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Германия</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!--<script type="text/javascript" src="js/lib/jquery-3.2.1.slim.min.js"></script>-->
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

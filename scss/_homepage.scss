@@ -1,0 +1,197 @@
+.hp-slider-section {
+  margin-bottom: 130px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 60px;
+  }
+}
+
+.slideshow {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  * {
+    outline: none;
+  }
+
+  .slider {
+
+    .item {
+      height: 100%;
+      position: relative;
+      z-index: 1;
+
+      .slider-img {
+        width: 100%;
+        min-height: 690px;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        transform: scale(1.2);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        overflow: hidden;
+        border-radius: $border-radius;
+
+        @media (max-width: 900px) {
+          min-height: 500px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          min-height: 345px;
+        }
+      }
+
+      &.slick-active .slider-img {
+        transform: scale(1);
+      }
+
+      .item-signature {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+
+        @media (max-width: 900px) {
+          left: 30px;
+          bottom: 30px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          left: 15px;
+          bottom: 15px;
+        }
+
+        h2 {
+          margin: 0 0 5px 0;
+          font-size: 48px;
+          line-height: 50px;
+          color: #fff;
+          text-transform: uppercase;
+          text-shadow: 0 0 13px rgba(0, 0, 0, 0.33);
+
+          @media (max-width: $screen-xs-max) {
+            font-size: 24px;
+            line-height: 26px;
+          }
+        }
+
+        span {
+          display: block;
+          font-size: 24px;
+          line-height: 26px;
+          font-weight: 300;
+          color: #fff;
+          text-shadow: 0 0 13px rgba(0, 0, 0, 0.33);
+          font-family: $font-light;
+
+          @media (max-width: $screen-xs-max) {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+
+    .slick-list {
+      box-shadow: $bs-default;
+      border-radius: $border-radius;
+    }
+
+    .slider-track {
+      transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .slick-dots {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -70px;
+      width: 100%;
+      text-align: center;
+
+      @media (max-width: $screen-xs-max) {
+        bottom: -40px;
+      }
+
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 8px;
+
+        &.slick-active {
+          button {
+            background-color: $main-color;
+          }
+        }
+
+        button {
+          background: none;
+          padding: 0;
+          width: 33px;
+          height: 33px;
+          border-radius: 50%;
+          font-size: 0;
+          border: 4px solid $main-color;
+          outline: none;
+          cursor: pointer;
+          @include transition;
+
+          @media (max-width: $screen-xs-max) {
+            width: 17px;
+            height: 17px;
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sale-section {
+  margin-bottom: 10px;
+
+  .sale-info-wrapper {
+    width: 100%;
+    background-color: $main-color;
+    border-radius: $border-radius;
+    text-align: center;
+    min-height: 200px;
+    padding: 65px 0;
+
+    @media (max-width: $screen-xs-max) {
+      min-height: 100px;
+      padding: 25px 0;
+    }
+
+    h3 {
+      font-size: 48px;
+      line-height: 50px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 13px rgba(0, 0, 0, 0.33);
+      margin: 0;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 26px;
+      font-family: $font-light;
+      color: #fff;
+      text-shadow: 0 0 13px rgba(0, 0, 0, 0.33);
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albanto</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+	</head>
+	<body>
+		<header class="header-main">
+			<div class="wrapper">
+				<div class="header-wrapper d-flex flex-row justify-content-between align-content-center">
+					<div class="mobile-wrapper">
+						<div class="mobile-menu-toggle">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+						<span class="mdi mdi-magnify search-button"></span>
+					</div>
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" class="img-fluid" alt="">
+						</a>
+					</div>
+					<nav class="menu">
+						<a href="about-us.html">О компании</a>
+						<a href="catalog.html">Коллекции</a>
+						<a href="cooperation.html">Сотрудничество</a>
+						<a href="shops.html">Магазины</a>
+						<a href="contacts.html">Контакты</a>
+
+						<div class="mobile-info">
+							<div class="social-wrap">
+								<a href="#">
+									<span class="mdi mdi-facebook"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-vk"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-instagram"></span>
+								</a>
+							</div>
+							<div class="phones-wrap">
+								<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+								<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+							</div>
+						</div>
+					</nav>
+					<div class="header-controls d-flex flex-row justify-content-between align-content-center">
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-magnify search-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-account-circle profile-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="busket.html">
+								<span class="mdi mdi-shopping basket-button basket-button-not-empty"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search-field">
+					<form action="#">
+						<input type="search" placeholder="Поиск по каталогу" class="search-input">
+						<button type="submit" class="search-icon">
+							<span class="mdi mdi-magnify"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="login-cooperation-wrapper wrapper">
+				<div class="mobile-select-shops order-link">
+					<a href="catalog.html">
+						<h3><span class="mdi mdi-arrow-left"></span> Мой заказ</h3>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="busket-row">
+							<div class="product-img" style="background-image: url('images/catalog-img1.jpg');"></div>
+							<div class="product-details">
+								<div class="delete-product mdi mdi-delete"></div>
+								<span>ПАЛЬТО П-220</span>
+								<div class="row">
+									<div class="col-3">
+										<mark>Размер</mark>
+										<i>46</i>
+									</div>
+									<div class="col-4">
+										<mark>Цвет</mark>
+										<i>102</i>
+									</div>
+								</div>
+								<div class="price-wrap d-flex align-items-center">
+									2025 x <div class="input-wrap"><input type="number" value="1"></div> = 2025 грн
+								</div>
+							</div>
+						</div>
+
+						<div class="busket-row">
+							<div class="product-img" style="background-image: url('images/catalog-img3.jpg');"></div>
+							<div class="product-details">
+								<div class="delete-product mdi mdi-delete"></div>
+								<span>ПАЛЬТО П-220</span>
+								<div class="row">
+									<div class="col-3">
+										<mark>Размер</mark>
+										<i>46</i>
+									</div>
+									<div class="col-4">
+										<mark>Цвет</mark>
+										<i>102</i>
+									</div>
+								</div>
+								<div class="price-wrap d-flex align-items-center">
+									2025 x <div class="input-wrap"><input type="number" value="1"></div> = 2025 грн
+								</div>
+							</div>
+						</div>
+
+						<div class="total-info-wrap d-flex justify-content-between">
+							<div class="left-col">
+								<span>Cумма заказа 6075 грн.</span>
+								<span>У Вас нет скидки. </span>
+							</div>
+							<div class="right-col">
+								<span>Итого: <mark>6075 грн</mark></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="repeat-title busket-repeat-title">Оформление заказа</h2>
+						<div class="registration-wrap">
+							<h4>Представьтесь, пожалуйста</h4>
+							<p style="padding: 0; text-indent: 0"><span class="on-click">Покупка в один клик</span> или <span class="login">Авторизируйтесь</span>, если уже зарегистрированы</p>
+							<form action="#">
+								<div class="input-wrap">
+									<input type="text" placeholder="Ф.И.О. *">
+								</div>
+								<div class="input-wrap">
+									<input type="tel" placeholder="Телефон *">
+								</div>
+								<div class="input-wrap">
+									<div class="dropdown dropdown-site">
+										<div class="dropdown-select-wrapper dropdown-toggle" data-toggle="dropdown">
+											<mark class="selected">Страна</mark>
+											<i class="mdi mdi-chevron-down arrow"></i>
+										</div>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Страна 1</a>
+											<a class="dropdown-item" href="#">Страна 2</a>
+											<a class="dropdown-item" href="#">Страна 3</a>
+											<a class="dropdown-item" href="#">Страна 4</a>
+											<a class="dropdown-item" href="#">Страна 5</a>
+										</div>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<input type="text" placeholder="Город *">
+								</div>
+								<div class="input-wrap">
+									<input type="text" placeholder="Адрес получателя">
+								</div>
+								<div class="input-wrap">
+									<input type="email" placeholder="Электронная почта *">
+								</div>
+								<div class="input-wrap">
+									<textarea placeholder="Комментарии к заказу"></textarea>
+								</div>
+
+								<h4 style="margin-top: 30px;">Выберите вариант оплаты</h4>
+								<div class="input-wrap">
+									<div class="dropdown dropdown-site">
+										<div class="dropdown-select-wrapper dropdown-toggle" data-toggle="dropdown">
+											<mark class="selected">Способ оплаты</mark>
+											<i class="mdi mdi-chevron-down arrow"></i>
+										</div>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Способ оплаты 1</a>
+											<a class="dropdown-item" href="#">Способ оплаты 2</a>
+											<a class="dropdown-item" href="#">Способ оплаты 3</a>
+											<a class="dropdown-item" href="#">Способ оплаты 4</a>
+											<a class="dropdown-item" href="#">Способ оплаты 5</a>
+										</div>
+									</div>
+								</div>
+
+								<h4 style="margin-top: 30px;">Доставка товара</h4>
+								<div class="input-wrap">
+									<div class="dropdown dropdown-site">
+										<div class="dropdown-select-wrapper dropdown-toggle" data-toggle="dropdown">
+											<mark class="selected">Транспортная компания *</mark>
+											<i class="mdi mdi-chevron-down arrow"></i>
+										</div>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Транспортная компания 1</a>
+											<a class="dropdown-item" href="#">Транспортная компания 2</a>
+											<a class="dropdown-item" href="#">Транспортная компания 3</a>
+											<a class="dropdown-item" href="#">Транспортная компания 4</a>
+											<a class="dropdown-item" href="#">Транспортная компания 5</a>
+										</div>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<input type="text" placeholder="Склад доставки">
+								</div>
+								<div class="input-wrap">
+									<input type="text" placeholder="Получатель">
+								</div>
+
+								<p class="hint-text">Поля, помеченные звездочкой, обязательны для заполнения</p>
+								<div class="input-wrap">
+									<div class="checkbox checkbox_black">
+										<input type="checkbox" id="check1">
+										<label for="check1">
+											<span class="check-wrap"></span>
+											<i class="remember-me-text">Пользовательское соглашение</i>
+										</label>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<button type="submit">
+										<span class="mdi mdi-shopping"></span>
+										Оформить заказ
+									</button>
+								</div>
+							</form>
+
+						</div>
+
+						<div class="login-wrap">
+							<h4>Выполните авторизацию</h4>
+							<p style="padding: 0; text-indent: 0">Или <span class="registration">зарегистрируйтесь</span></p>
+							<form action="#">
+								<div class="input-wrap">
+									<input type="email" placeholder="Электронная почта">
+								</div>
+								<div class="input-wrap">
+									<input type="password" placeholder="Пароль">
+								</div>
+								<div class="input-wrap d-flex justify-content-between align-items-center">
+									<div class="checkbox checkbox_black">
+										<input type="checkbox" id="check2">
+										<label for="check2">
+											<span class="check-wrap"></span>
+											<i class="remember-me-text">Запомнить меня</i>
+										</label>
+									</div>
+									<a href="#" class="forgot-pass">Забыли пароль?</a>
+								</div>
+								<div class="input-wrap">
+									<button type="submit">
+										<span class="mdi mdi-account-circle"></span>
+										Войти
+									</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="on-click-wrap">
+							<h4>Заказ в один клик</h4>
+							<p style="padding: 0; text-indent: 0">Оставьте свой контактный телефон и мы свяжемся с Вами или <span class="login">Авторизируйтесь</span></p>
+							<form action="#">
+								<div class="input-wrap">
+									<input type="tel" placeholder="Телефон *">
+								</div>
+								<div class="input-wrap">
+									<div class="checkbox checkbox_black">
+										<input type="checkbox" id="check3">
+										<label for="check3">
+											<span class="check-wrap"></span>
+											<i class="remember-me-text">Пользовательское соглашение</i>
+										</label>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<button type="submit">
+										<span class="mdi mdi-shopping"></span>
+										Оформить заказ
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-main">
+			<div class="wrapper d-flex flex-row justify-content-between align-content-center">
+				<div class="phones-wrap">
+					<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+					<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+				</div>
+				<div class="social-wrap">
+					<a href="#">
+						<span class="mdi mdi-facebook"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-vk"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-instagram"></span>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- The Modals -->
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!--<script type="text/javascript" src="js/lib/jquery-3.2.1.slim.min.js"></script>-->
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

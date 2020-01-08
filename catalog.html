@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albanto</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+	</head>
+	<body>
+		<header class="header-main">
+			<div class="wrapper">
+				<div class="header-wrapper d-flex flex-row justify-content-between align-content-center">
+					<div class="mobile-wrapper">
+						<div class="mobile-menu-toggle">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+						<span class="mdi mdi-magnify search-button"></span>
+					</div>
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" class="img-fluid" alt="">
+						</a>
+					</div>
+					<nav class="menu">
+						<a href="about-us.html">О компании</a>
+						<a href="catalog.html" class="active">Коллекции</a>
+						<a href="cooperation.html">Сотрудничество</a>
+						<a href="shops.html">Магазины</a>
+						<a href="contacts.html">Контакты</a>
+
+						<div class="mobile-info">
+							<div class="social-wrap">
+								<a href="#">
+									<span class="mdi mdi-facebook"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-vk"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-instagram"></span>
+								</a>
+							</div>
+							<div class="phones-wrap">
+								<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+								<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+							</div>
+						</div>
+					</nav>
+					<div class="header-controls d-flex flex-row justify-content-between align-content-center">
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-magnify search-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-account-circle profile-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="busket.html">
+								<span class="mdi mdi-shopping basket-button basket-button-not-empty"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search-field">
+					<form action="#">
+						<input type="search" placeholder="Поиск по каталогу" class="search-input">
+						<button type="submit" class="search-icon">
+							<span class="mdi mdi-magnify"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="catalog-wrapper wrapper">
+				<div class="row">
+					<div class="col-md-3 col-catalog-sidebar">
+						<div class="catalog-sidebar">
+							<div class="mobile-select-catalog">
+								<span data-toggle="modal" data-target="#collections">Коллекция <i class="mdi mdi-chevron-down"></i></span>
+								<span data-toggle="modal" data-target="#filters">Фильтр <i class="mdi mdi-filter-variant"></i></span>
+							</div>
+							<div class="sidebar-block">
+								<h3>Коллекции</h3>
+								<ul class="sidebar-list">
+									<li>
+										<a href="#">Осень-зима</a>
+									</li>
+									<li>
+										<a href="#" class="active">Распродажа</a>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-block">
+								<h3>Фильтры</h3>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter1" aria-expanded="true">
+										<span>Типы товара <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse show" id="filter1">
+										<ul class="sidebar-list sidebar-list-filter">
+											<li>
+												<a href="#">Новинки</a>
+											</li>
+											<li>
+												<a href="#">Скидки</a>
+											</li>
+											<li>
+												<a href="#">Хит продаж</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter2" aria-expanded="false">
+										<span>Ценовой диапазон <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse" id="filter2">
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">10-100</a>
+											</li>
+											<li>
+												<a href="#">100-1000</a>
+											</li>
+											<li>
+												<a href="#">1000-10000</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter3" aria-expanded="false">
+										<span>Цвет <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse" id="filter3">
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">красный</a>
+											</li>
+											<li>
+												<a href="#">зеленый</a>
+											</li>
+											<li>
+												<a href="#">синий</a>
+											</li>
+											<li>
+												<a href="#">фиолетовый</a>
+											</li>
+											<li>
+												<a href="#">желтый</a>
+											</li>
+											<li>
+												<a href="#">молочный</a>
+											</li>
+											<li>
+												<a href="#">коричневый</a>
+											</li>
+											<li>
+												<a href="#">вишневый</a>
+											</li>
+											<li>
+												<a href="#">песочный</a>
+											</li>
+											<li>
+												<a href="#">темно-вишневый</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-product-columns-wrapper">
+						<div class="product-columns-wrapper d-flex flex-wrap justify-content-center">
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img1.jpg" class="default" alt="">
+										<img src="images/catalog-img3.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-242/1</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>3999</mark> грн</span>
+												<i>скидка - 62%</i>
+											</div>
+											<div class="new-price">
+												<span>1500 грн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img2.jpg" class="default" alt="">
+										<img src="images/catalog-img3.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-220</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>4899</mark> грн</span>
+												<i>скидка - 58%</i>
+											</div>
+											<div class="new-price">
+												<span>2025 грн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img3.jpg" class="default" alt="">
+										<img src="images/catalog-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-198</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>5599</mark> грн</span>
+												<i>скидка - 63%</i>
+											</div>
+											<div class="new-price">
+												<span>2025 грн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img4.jpg" class="default" alt="">
+										<img src="images/catalog-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-230</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>3699</mark> грн</span>
+												<i>скидка - 32%</i>
+											</div>
+											<div class="new-price">
+												<span>2499 грн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img5.jpg" class="default" alt="">
+										<img src="images/catalog-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-251</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>3699</mark> грн</span>
+												<i>скидка - 59%</i>
+											</div>
+											<div class="new-price">
+												<span>1500 грн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-wrap">
+								<a href="product-card.html" class="catalog-col">
+									<div class="img-wrap">
+										<img src="images/catalog-img6.jpg" class="default" alt="">
+										<img src="images/catalog-img1.jpg" class="hover" alt="">
+									</div>
+									<div class="product-info">
+										<h4 class="product-name">ПАЛЬТО П-219</h4>
+										<div class="product-info-price d-flex">
+											<div class="old-price">
+												<span><mark>2999</mark> грн</span>
+												<i>скидка - 49%</i>
+											</div>
+											<div class="new-price">
+												<span>1500 рн</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-main">
+			<div class="wrapper d-flex flex-row justify-content-between align-content-center">
+				<div class="phones-wrap">
+					<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+					<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+				</div>
+				<div class="social-wrap">
+					<a href="#">
+						<span class="mdi mdi-facebook"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-vk"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-instagram"></span>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- The Modals -->
+		<div class="modal fade modal-catalog" id="filters">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="sidebar-block">
+						<h3>Фильтры</h3>
+						<span class="close-modal mdi mdi-close" data-dismiss="modal"></span>
+						<div class="sidebar-filter">
+							<div class="filter-heading" data-toggle="collapse" data-target="#filter4" aria-expanded="true">
+								<span>Типы товара <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+							</div>
+							<div class="filter-body collapse show" id="filter4">
+								<ul class="sidebar-list sidebar-list-filter">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check1">
+											<label for="check1">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Новинки</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check2">
+											<label for="check2">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Скидки</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check3">
+											<label for="check3">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Хит продаж</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar-filter">
+							<div class="filter-heading" data-toggle="collapse" data-target="#filter5" aria-expanded="true">
+								<span>Ценовой диапазон <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+							</div>
+							<div class="filter-body collapse show" id="filter5" style="">
+								<ul class="sidebar-list">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check4">
+											<label for="check4">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">10-100</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check5">
+											<label for="check5">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">100-1000</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check6">
+											<label for="check6">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">1000-10000</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar-filter">
+							<div class="filter-heading" data-toggle="collapse" data-target="#filter6" aria-expanded="true">
+								<span>Цвет <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+							</div>
+							<div class="filter-body collapse show" id="filter6" style="">
+								<ul class="sidebar-list">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check7">
+											<label for="check7">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">красный</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check8">
+											<label for="check8">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">зеленый</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check9">
+											<label for="check9">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">синий</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check10">
+											<label for="check10">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">фиолетовый</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check11">
+											<label for="check11">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">желтый</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check12">
+											<label for="check12">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">молочный</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check13">
+											<label for="check13">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">коричневый</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check14">
+											<label for="check14">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">вишневый</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check15">
+											<label for="check15">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">песочный</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check16">
+											<label for="check16">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">темно-вишневый</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-catalog" id="collections">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="sidebar-block">
+						<h3>КОЛЛЕКЦИИ</h3>
+						<span class="close-modal mdi mdi-close" data-dismiss="modal"></span>
+						<div class="sidebar-filter">
+							<div class="filter-body collapse show" id="filter10">
+								<ul class="sidebar-list sidebar-list-filter">
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check17">
+											<label for="check17">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Осень-зима</i>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check18">
+											<label for="check18">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Распродажа</i>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!--<script type="text/javascript" src="js/lib/jquery-3.2.1.slim.min.js"></script>-->
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

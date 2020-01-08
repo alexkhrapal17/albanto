@@ -1,0 +1,92 @@
+.footer-main {
+  padding: 40px 0;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 0;
+  }
+
+  .wrapper {
+    @media (max-width: 768px) {
+      display: block !important;
+      text-align: center;
+    }
+  }
+
+  .social-wrap {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.phones-wrap {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: $font-light;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      margin-bottom: 10px;
+      margin-right: 0;
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}
+
+.social-wrap {
+
+  &.social-wrap-contacts {
+    margin-top: 15px;
+
+    a {
+      &:first-child {
+        margin-left: -11px;
+
+        @media (max-width: $screen-xs-max) {
+          margin-left: -8px;
+        }
+      }
+
+      span {
+        font-size: 40px;
+        line-height: 40px;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+
+    &:hover {
+      span {
+        color: #222;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 22px;
+      line-height: 22px;
+      color: $main-color;
+      @include transition;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}

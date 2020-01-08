@@ -1,0 +1,545 @@
+.product-slider-holder {
+  @media (max-width: $screen-xs-max) {
+    padding: 0;
+  }
+}
+
+.product-slider-mobile {
+  @media (max-width: $screen-xs-max) {
+    padding: 0 15px;
+  }
+  .slick-list {
+    @media (max-width: $screen-md-max) {
+      box-shadow: $bs-default;
+      border-radius: $border-radius;
+    }
+  }
+
+  .slick-dots {
+    padding: 0;
+    margin: 30px 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 20px 0 25px 0;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px;
+
+      @media (max-width: $screen-xs-max) {
+        margin: 0 8px;
+      }
+
+      &.slick-active {
+        button {
+          background-color: $main-color;
+        }
+      }
+
+      button {
+        background: none;
+        padding: 0;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        font-size: 0;
+        border: 4px solid $main-color;
+        outline: none;
+        cursor: pointer;
+        @include transition;
+
+        @media (max-width: $screen-xs-max) {
+          width: 17px;
+          height: 17px;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+
+  .mobile-slide {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-md-max) {
+      margin: 0;
+    }
+
+    .sale-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 15px 20px;
+      background-color: #26a69a;
+      opacity: .8;
+      text-align: center;
+      border-radius: 0 0 8px 0;
+      z-index: 10;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 12px 10px 10px 10px;
+      }
+
+      span {
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+        font-family: $font-bold;
+        text-shadow: 0 0 13px rgba(0, 0, 0, 0.33);
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.product-slider-nav {
+  margin-bottom: 30px;
+
+  .slick-arrow {
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      &:before {
+        color: $main-color;
+      }
+    }
+
+    &:before {
+      display: inline-block;
+      font: normal normal normal 24px/1 "Material Design Icons";
+      font-size: 40px;
+      text-rendering: auto;
+      line-height: inherit;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      @include transition;
+    }
+
+    &.slick-prev {
+      left: 0;
+
+      &:before {
+        content: "\F141";
+      }
+    }
+
+    &.slick-next {
+      right: 0;
+
+      &:before {
+        content: "\F142";
+      }
+    }
+  }
+
+  .product-slider-nav-slide {
+    text-align: center;
+
+    .slide-img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 200px;
+      margin-right: 50px;
+
+      @media (max-width: $screen-xs-max) {
+        width: 100px;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: $border-radius;
+      }
+    }
+
+    .slide-color {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+
+      span {
+        display: block;
+        font-size: 30px;
+        line-height: 32px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 15px;
+          line-height: 17px;
+        }
+      }
+
+      i {
+        display: block;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 32px;
+        font-family: $font-light;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 15px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.product-description {
+  h2 {
+    margin: 0 0 35px 0;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: $font-medium;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  p {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 15px;
+    text-align: justify;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .size-gird-link {
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 25px;
+      line-height: 25px;
+      color: $main-color;
+      margin-right: 5px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 20px;
+      font-family: $font-light;
+      color: $main-color;
+      text-decoration: underline;
+      font-style: normal;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .detail-info {
+    border-radius: $border-radius;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: solid 1px #cfd8dc;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+    }
+
+    .detail-into-row {
+      padding: 10px 15px;
+      background-color: #cfd8dc;
+
+      &:nth-child(2n) {
+        background-color: #fff;
+      }
+
+      span {
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $font-light;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 15px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  .price-wrapper {
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      display: block !important;
+      margin-bottom: 15px;
+    }
+
+    .price-col {
+      span {
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $font-light;
+        margin-bottom: 10px;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 15px;
+          line-height: 17px;
+        }
+
+        mark {
+          display: inline-block;
+          background: none;
+          padding: 0;
+          font-size: 30px;
+          line-height: 32px;
+          font-family: $font-bold;
+          color: #fe4342;
+          margin-left: 5px;
+
+          @media (max-width: $screen-xs-max) {
+            font-size: 24px;
+            line-height: 26px;
+          }
+        }
+
+        i {
+          font-style: normal;
+          font-size: 24px;
+          line-height: 26px;
+          text-decoration: line-through;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.question-col {
+  cursor: pointer;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 15px 35px;
+    background-color: $main-color;
+    border-radius: $border-radius;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.29;
+    text-transform: uppercase;
+    text-decoration: none;
+    pointer-events: none;
+    @include transition;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 12px 35px 10px 35px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: #b79558;
+    }
+
+    span {
+      display: block;
+      font-size: 50px;
+      line-height: 52px;
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.select-size-color {
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+
+  [class*='col-'] {
+    @media (max-width: $screen-xs-max) {
+      padding-right: 15px;
+      padding-left: 0;
+    }
+  }
+}
+
+.dropdown-site {
+  border-radius: $border-radius;
+  border: 1px solid #000;
+  cursor: pointer;
+
+  @media (max-width: $screen-md-max) {
+    margin-bottom: 15px;
+  }
+
+  .dropdown-select-wrapper {
+    position: relative;
+    padding: 10px 15px;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 7px 15px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      font-size: 40px;
+      line-height: 41px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-family: $font-light;
+      margin-bottom: 10px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .selected {
+      display: block;
+      font-size: 30px;
+      line-height: 32px;
+      font-family: $font-light;
+      background: none;
+      padding: 0;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    width: calc(100% + 2px);
+    left: -1px !important;
+    min-width: initial;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: .125rem 0;
+    //margin-top: 10px;
+
+    a {
+      font-size: 24px;
+      line-height: 26px;
+      font-family: $font-light;
+      padding: 10px 15px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      &:active {
+        background: #cfd8dc;
+      }
+    }
+  }
+}
+
+.make-order-button {
+  display: block;
+  border-radius: $border-radius;
+  background-color: $main-color;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $font-bold;
+  text-transform: uppercase;
+  @include transition;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 18px 0 15px 0;
+  }
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #b79558;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 32px;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+  }
+}

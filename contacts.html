@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albanto</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+	</head>
+	<body>
+		<header class="header-main">
+			<div class="wrapper">
+				<div class="header-wrapper d-flex flex-row justify-content-between align-content-center">
+					<div class="mobile-wrapper">
+						<div class="mobile-menu-toggle">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+						<span class="mdi mdi-magnify search-button"></span>
+					</div>
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" class="img-fluid" alt="">
+						</a>
+					</div>
+					<nav class="menu">
+						<a href="about-us.html">О компании</a>
+						<a href="catalog.html">Коллекции</a>
+						<a href="cooperation.html">Сотрудничество</a>
+						<a href="shops.html">Магазины</a>
+						<a href="contacts.html" class="active">Контакты</a>
+
+						<div class="mobile-info">
+							<div class="social-wrap">
+								<a href="#">
+									<span class="mdi mdi-facebook"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-vk"></span>
+								</a>
+								<a href="#">
+									<span class="mdi mdi-instagram"></span>
+								</a>
+							</div>
+							<div class="phones-wrap">
+								<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+								<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+							</div>
+						</div>
+					</nav>
+					<div class="header-controls d-flex flex-row justify-content-between align-content-center">
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-magnify search-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="#">
+								<span class="mdi mdi-account-circle profile-button"></span>
+							</a>
+						</div>
+						<div class="header-controls__col">
+							<a href="busket.html">
+								<span class="mdi mdi-shopping basket-button basket-button-not-empty"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search-field">
+					<form action="#">
+						<input type="search" placeholder="Поиск по каталогу" class="search-input">
+						<button type="submit" class="search-icon">
+							<span class="mdi mdi-magnify"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="catalog-wrapper wrapper">
+				<div class="row">
+					<div class="col-md-3 col-catalog-sidebar">
+						<div class="catalog-sidebar">
+							<div class="mobile-select-shops">
+								<h3>Контакты</h3>
+							</div>
+							<div class="sidebar-block">
+								<h3>Магазины</h3>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter1" aria-expanded="true">
+										<span>Страна <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse show" id="filter1">
+										<ul class="sidebar-list sidebar-list-filter">
+											<li>
+												<a href="#">Украина</a>
+											</li>
+											<li>
+												<a href="#">Германия</a>
+											</li>
+											<li>
+												<a href="#">Италия</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sidebar-filter">
+									<div class="filter-heading" data-toggle="collapse" data-target="#filter2" aria-expanded="true">
+										<span>Город <i class="collapse-plus">+</i><i class="collapse-minus">-</i></span>
+									</div>
+									<div class="filter-body collapse show" id="filter2" style="">
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">Харьков</a>
+											</li>
+											<li>
+												<a href="#">Киев</a>
+											</li>
+											<li>
+												<a href="#">Днепр</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-product-columns-wrapper col-contacts-wrapper">
+						<div id="map"></div>
+						<div class="contacts-wrapper">
+							<h2>Украина г. Харьков</h2>
+							<h3>Отдел продаж:</h3>
+							<p>Менеджер по работе с оптовыми клиентами +38 (099) 484 35 38</p>
+							<p>Менеджер по интернет-продажам и работе с розничными клиентами +38 (068) 404 68 42</p>
+
+							<div class="row justify-content-between align-items-end">
+								<div class="social-block">
+									<p>Skype: <a href="#">albanto.ua</a></p>
+									<p>E-mail: <a href="mailto:albantocoat@gmail.com">albantocoat@gmail.com</a></p>
+									<p>Мы в социальных сетях</p>
+									<div class="social-wrap social-wrap-contacts">
+										<a href="#">
+											<span class="mdi mdi-facebook"></span>
+										</a>
+										<a href="#">
+											<span class="mdi mdi-vk"></span>
+										</a>
+										<a href="#">
+											<span class="mdi mdi-instagram"></span>
+										</a>
+									</div>
+								</div>
+								<div class="question-col" data-toggle="modal" data-target="#ask-question">
+									<a href="#"><span class="mdi mdi-comment-question"></span> У меня <br> вопрос</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-main">
+			<div class="wrapper d-flex flex-row justify-content-between align-content-center">
+				<div class="phones-wrap">
+					<a href="tel:+38 (099) 484 35 38">+38 (099) 484 35 38</a>
+					<a href="tel:+38 (068) 404 68 42">+38 (068) 404 68 42</a>
+				</div>
+				<div class="social-wrap">
+					<a href="#">
+						<span class="mdi mdi-facebook"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-vk"></span>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-instagram"></span>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- The Modals -->
+		<div class="modal fade" id="ask-question">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-wrapper">
+						<span class="close-modal mdi mdi-close" data-dismiss="modal"></span>
+						<h4>Форма Вашего вопроса</h4>
+						<form action="#">
+							<div class="input-wrap">
+								<input type="text" placeholder="Ваше имя *">
+							</div>
+							<div class="input-wrap">
+								<input type="text" placeholder="Город *">
+							</div>
+							<div class="input-wrap">
+								<input type="tel" placeholder="Контактный телефон *">
+							</div>
+							<div class="input-wrap">
+								<input type="email" placeholder="Контактный email *">
+							</div>
+							<div class="input-wrap">
+								<textarea placeholder="Ваш вопрос"></textarea>
+							</div>
+							<p class="hint-text">Поля, помеченные звездочкой, обязательны для заполнения</p>
+							<div class="input-wrap">
+								<button type="submit">
+									<span class="mdi mdi-send"></span>
+									Отправить
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(50.002504, 36.302913),
+                    zoom: 17,
+                    styles: [
+                        {
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#1d2c4d"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#8ec3b9"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#1a3646"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.country",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#4b6878"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#64779e"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.province",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#4b6878"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape.man_made",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#334e87"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape.natural",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#023e58"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#283d6a"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#6f9ba5"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#1d2c4d"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#023e58"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#3C7680"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#304a7d"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#98a5be"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#1d2c4d"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2c6675"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#255763"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#b0d5ce"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#023e58"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#98a5be"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#1d2c4d"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.line",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#283d6a"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#3a4762"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#0e1626"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#4e6d70"
+                                }
+                            ]
+                        }
+                    ]
+                };
+                var map = new google.maps.Map(document.getElementById("map"), mapProp);
+            }
+		</script>
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+		<!--<script type="text/javascript" src="js/lib/jquery-3.2.1.slim.min.js"></script>-->
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
